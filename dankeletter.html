@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Single page website</title>
+
+    <style>
+        /* smooth scrolling */
+        html {scroll-behavior: smooth;}
+        body {margin: 0;}
+        main {margin: 0 10px;}
+        /* add a header background img */
+        header {
+            height: 120px;
+            background-image: url(solar12.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding-top: 10px;
+        }
+        h2 {
+            padding-top: 50px;
+        }
+        /* style the navigation and make it stick on top */
+        nav {
+            background: #f4ca3f;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            color: brown;
+            font-size: 20px;
+        }
+        @media all and (max-width: 640px) {
+            nav a {
+                display: block;
+                padding: 20px;
+                border-bottom: 1px solid brown;
+            }
+            nav {
+                text-align: center;
+                display: block;
+            }
+        }
+        nav a:hover {
+            background: #b48631;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
